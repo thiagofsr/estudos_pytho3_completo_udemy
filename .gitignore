@@ -1,0 +1,11 @@
+env_linux/
+
+interface_grafica/calculadora/__pycache__/
+
+interface_grafica/.mypy_cache
+
+
+
+.env
+
+
