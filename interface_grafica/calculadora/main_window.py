@@ -1,6 +1,6 @@
 
-from PySide6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, 
-                               QWidget, QLabel )
+from PySide6.QtWidgets import (QMainWindow, QVBoxLayout, 
+                               QWidget)
 
 
 class MainWindow(QMainWindow):
@@ -9,8 +9,8 @@ class MainWindow(QMainWindow):
         
         #configurar janela layout básico
         self.cw = QWidget() # cria widget central 
-        self.vlayout = QVBoxLayout() 
-        self.cw.setLayout(self.vlayout)
+        self.vLayout = QVBoxLayout() 
+        self.cw.setLayout(self.vLayout)
         self.setCentralWidget(self.cw)
         
         # adiciona titulo da janela principal
@@ -31,8 +31,8 @@ class MainWindow(QMainWindow):
 
     # com oboa pratica é interenssante sempre que se tem 3 niveis 
     # cria-se uma função para isso , caso da função abaixo
-    def addToVLayout(self, widget: QWidget): #Esse final é para indicar que a tipagel do parametro é QWidiget 
+    def addWidgetToVLayout(self, widget: QWidget): #Esse final é para indicar que a tipagel do parametro é QWidiget 
         #adiciona widget no layout
-        self.vlayout.addWidget(widget)
+        self.vLayout.addWidget(widget)
 
 
